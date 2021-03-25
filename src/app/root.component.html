@@ -1,0 +1,24 @@
+<div id="mySidenav" class="sidenav" [ngStyle]="{'width': sidebarWidth}">
+  <div class="vertical-menu">
+    <a routerLink="/home/dashboard" routerLinkActive="active">Dashboard</a>
+    <a routerLink="/home/inquiry" routerLinkActive="active">Inquiry</a>
+  </div>
+</div>
+
+<!-- Use any element to open the sidenav -->
+
+<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+<div id="main" [ngStyle]="{'margin-left': sidebarWidth}">
+  <nav class="navbar navbar-dark bg-primary justify-content-between">
+    <div class="navbar-brand">
+      <button (click)="toggleSidebar($event)" class="navbar-toggler" type="button">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a>Welcome FirstName and LastName</a>
+    </div>
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+  </nav>
+  <div class="container">
+    <router-outlet></router-outlet>
+  </div>
+</div>
