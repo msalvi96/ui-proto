@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
+import { UiSwitchModule } from 'ngx-ui-switch';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -21,6 +22,7 @@ import { RootComponent } from './root.component';
     BrowserModule,
     CommonModule,
     RouterModule,
+    UiSwitchModule,
     AppRoutingModule,
     BrowserAnimationsModule,
   ],
